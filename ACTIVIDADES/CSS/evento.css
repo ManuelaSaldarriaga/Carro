@@ -1,0 +1,21 @@
+.titulo{
+    font-size: 5rem;
+    color: rgb(6, 6, 100);
+    cursor: pointer;
+    display: flex;
+    width: 11rem;
+    padding: 1rem;
+}
+
+.click{
+    font-size: 3rem;
+    color: rgb(5, 102, 110);
+    cursor: pointer;
+    width: 19rem;
+    padding: 0.6rem;
+}
+
+.oculto{
+    display: none;
+    border-radius: 8px;
+}

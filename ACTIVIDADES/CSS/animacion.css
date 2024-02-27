@@ -1,0 +1,33 @@
+.contenedor{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30rem;
+}
+
+.flor{
+    width: 8rem;
+    height: 8rem;
+    background-color: rgb(69, 126, 201);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.flor:hover{
+    animation: florMover 3s forwards ease;
+}
+
+@keyframes florMover {
+    100%{
+        box-shadow: 4.5rem 4.5rem  #220067c5,
+                -4.5rem -4.5rem  #220067c5,
+                4.5rem -4.5rem #220067c5,
+                -4.5rem 4.5rem  #220067c5,
+                0rem 6rem #220067c5,
+                6rem 0rem  #220067c5,
+                -6rem 0rem  #220067c5,
+                0rem -6rem  #220067c5;
+                transform: rotate(380deg);
+    }
+}
+

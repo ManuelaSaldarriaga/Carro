@@ -1,0 +1,119 @@
+
+.contenedor{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fondo{
+    width: 60%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url("../Multimedia/Fondo\ Boostrap.jpg");
+    position: relative;
+}
+
+.fondoMover{
+    animation: fondoMover 3s infinite linear;
+}
+
+@keyframes fondoMover {
+    100%{
+        background-position-x: -1900px;
+    }
+}
+
+.carro img{
+    position: absolute;
+    bottom: 4.8rem;
+    left: 32%;
+    width: 30%;
+}
+
+.carroMover{
+    animation: Mover 2s infinite linear;
+}
+
+@keyframes Mover {
+    0%{
+        bottom: 4.8rem;
+    }
+
+    100%{
+        bottom: 4.9rem;
+    }
+} 
+
+.llanta1 img{
+    position: absolute;
+    width: 5%;
+    bottom: 3.8rem;
+    left: 34.65rem;
+}
+
+.llanta1Mover{
+    animation: rodar 2s infinite linear;
+}
+
+.llanta2 img{
+    position: absolute;
+    width: 5%;
+    bottom: 3.67rem;
+    left: 51.63rem;
+}
+
+.llanta2Mover{
+    animation: rodar 2s infinite linear;
+}
+
+@keyframes rodar {
+    100%{
+        transform: rotate(1000deg);
+    }
+}
+
+.luces{
+    position: absolute;
+    width: 4%;
+    right: 37.5rem;
+    top: 30.3rem;
+}
+
+.lucesPrender{
+    animation: luces 1s infinite linear;
+}
+
+@keyframes luces {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.sprite {
+    background: url(../Multimedia/sprite\ humo.png);
+    width: 177px;
+    height: 8.2rem;
+    position: absolute;    
+    bottom: 2.2rem;
+    left: 23rem;
+}
+
+.spriteMover{
+    animation: polvo 1s steps(5) infinite;
+}
+
+@keyframes polvo {
+    100%{
+        background-position-x: 950px;
+    }
+} 
+
+.oculto{
+    display:none;
+}
